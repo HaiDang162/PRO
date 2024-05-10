@@ -71,7 +71,7 @@ public class VarNFun {
         //C: đúng 1, > 0, sai 0
         //Java: đúng: true, sai: false, -> boolean
         boolean marriedStatus = false;
-        if (marriedStatus == true)
+        if (marriedStatus)
             System.out.println("Đánh đồn có địch mới vui");
         else
             System.out.println("Vườn hồng có lối nhưng chưa ai vào");
