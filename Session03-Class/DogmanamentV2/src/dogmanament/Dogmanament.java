@@ -22,13 +22,9 @@ public class Dogmanament {
         chiHu.bark();
         Dog ngaoDa = new Dog("NGÁO ĐÁ", 2020, 50.0);
         ngaoDa.bark();
-        System.out.println("Chi Hu Hu barks again");
-        chiHu.bark();
-        System.out.println("After overweight");
-        chiHu.setNewWeight(5);
-        chiHu.bark();
-        int chYob = chiHu.getYob();
-        System.out.println("CH YOB: " + chYob);
-        System.out.println("NĐ YOB: " + ngaoDa.getYob());
+        System.out.println("Show all info by using toString() - a new behavior");
+        String chDetails = chiHu.toString();
+        System.out.println("CH details: " + chDetails);
+        System.out.println("NDD detais: " + ngaoDa.toString());
     }
 }

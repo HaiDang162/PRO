@@ -44,4 +44,12 @@ public class Dog {
     public void setNewWeight(double weight) {
         this.weight = weight;
     }
+
+    @Override
+    public String toString() {
+//        return "Dog{" + "name=" + name + ", yob=" + yob + ", weight=" + weight + '}';
+          String tmpMsg = String.format("|GOGO|%-10s|%4d|%4.1f|", name, yob, weight);
+          return tmpMsg;
+    }
+    
 }
