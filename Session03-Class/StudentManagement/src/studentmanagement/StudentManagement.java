@@ -19,7 +19,8 @@ public class StudentManagement {
      */
     public static void main(String[] args) {
         saveAStudent();
-        inputAStudent();
+        
+//        inputAStudent();
     }
     public static void inputAStudent() {
         String id, name;
@@ -40,7 +41,19 @@ public class StudentManagement {
         x.showProfile();
     }
     public static void saveAStudent() {
-        Student an = new Student("SE161495", "LÃ HẢI ĐĂNG", 2002, 6.9);
-        an.showProfile();
+        Student Dang = new Student("SE161495", "LÃ HẢI ĐĂNG", 2002, 6.9);
+        Student Dinh = new Student("SE161494", "LE LONG DINH", 2002, 10);
+        Dang.showProfile();
+        Dinh.showProfile();
+        System.out.println("Dang name (directly): " + Dang.yob);
+        System.out.println("Dang name (directly): " + Dang.getName());
+        System.out.println("Dinh name (directly): " + Dinh.name);
+        System.out.println("Dinh name (directly): " + Dinh.getName());
+        // vì có thể sờ được biến nên ta có thể get() or set()
+        Dang.yob = 2001;
+        System.out.println("Dang yob : " + Dang.yob);
+        Student Cuong = new Student("SE161490", "Le Cuong", 1996, 5.0);
+        Cuong.showProfile();
+        Cuong.sayHi();
     }
 }

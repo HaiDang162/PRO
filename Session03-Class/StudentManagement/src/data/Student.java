@@ -11,8 +11,8 @@ package data;
  */
 public class Student {
     private String id;
-    private String name;
-    private int yob;
+    public String name;
+    public int yob;
     private double gpa;
 
     public Student(String id, String name, int yob, double gpa) {
@@ -64,4 +64,9 @@ public class Student {
     public int getAge() {
         return 2021 - yob;
     }
+    public void sayHi() {
+        System.out.println("Hi everyone, My name is " + name);
+        System.out.println("By the way, my job is " + yob);
+    }
+    
 }
